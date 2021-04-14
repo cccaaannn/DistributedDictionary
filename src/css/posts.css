@@ -1,0 +1,45 @@
+/* ---------- words and posts ---------- */
+
+.wordHeader{
+    color: #568bff;
+    font-size: 2.7em;
+    font-weight: lighter;
+
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+
+.postDiv{
+    margin-bottom: 3em;
+}
+
+
+.lastAddedWordsButton{
+    background-color: #3c3c3c;
+    color: #ffffff;
+    border: 0px;
+    font-size: 2.3em;
+    font-weight: lighter;
+}
+
+.lastAddedWordsButton:hover{
+    /* background-color: #ffffff10; */
+    color: #568bff;
+    text-decoration: underline;
+}
+
+
+.voteButton{
+    background-color: #3c3c3c;
+    border: 0px;
+    color: #1ba100;
+    font-size: 1.5em;
+}
+
+.voteButton:hover {
+    background-color: #ffffff10;
+    border: 3px;
+}
+
+/* ---------- ---------- ---------- */

@@ -1,0 +1,37 @@
+/* ---------- toast massage ---------- */
+
+.toastMessage-success{
+    background-color: #32ff65a9;
+}
+
+.toastMessage-warning{
+    background-color: #ffb23db7;
+}
+
+.toastMessage-error{
+    background-color: #ff3758a9;
+}
+
+.toastMessageButton{
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    float: right;
+}
+
+.toastMessageButton:hover{
+    color: black;
+}
+
+.messageDiv{
+    color: #f8f8f8d3;
+
+    top:0;
+    font-size: 1.5em;
+    position: fixed;
+
+    width: 45%;
+    text-align: center;
+}
+
+/* ---------- ---------- ---------- */

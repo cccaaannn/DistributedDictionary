@@ -1,0 +1,73 @@
+/* ---------- html elements ---------- */
+body {
+    background-color: #3c3c3c;
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr.blue{
+    border: 2px solid #568bff;
+}
+
+h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h5{
+    margin-bottom: 1em;
+    font-weight: bold;
+    /* color: #ff6f56; */
+}
+
+a{
+    color: #3d7bff;
+    text-decoration: underline;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ---------- ---------- ---------- */
+
+
+
+/* ---------- Main header ---------- */
+
+.mainHeader{
+    background-color: #1f1f1f;
+    border: 0px;
+    color: white;
+    text-decoration: underline;
+}
+
+.blueMark{
+    background-color: #1f1f1f;
+    color: #568bff;
+}
+
+/* ---------- ---------- ---------- */
+
+
+
+/* ---------- layout ---------- */
+
+.container{
+    display: grid;
+    place-items: center;
+    
+}
+
+.content{
+    width: 45%;
+}
+
+.flexDiv{
+    display: flex;
+}
+
+/* ---------- ---------- ---------- */
+
