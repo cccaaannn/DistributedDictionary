@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="src/css/navbar.css">
     <link rel="stylesheet" href="src/css/forms.css">
     <link rel="stylesheet" href="src/css/posts.css">
+    <link rel="stylesheet" href="src/css/about.css">
     <link rel="stylesheet" href="src/css/toastMessages.css">
 
     <title>Distributed Dictionary</title>
 </head>
 <body>
 
+    <!-- navbar background -->
     <div class="navbarBackground"></div>
 
     <div class="container">
@@ -39,8 +41,8 @@
             <!-- search word form -->
             <form id="searchWordForm" onsubmit="return false;">
                 <div class="flexDiv"> 
-                    <input type="text" id="searchWord" placeholder="Word" class="navColor" required> 
-                    <button class="formButton navColor" id="searchWordButton">Search</button> 
+                    <input id="searchWord" class="navColor" placeholder="Word" type="text" required> 
+                    <button id="searchWordButton" class="formButton navColor">Search</button> 
                 </div>
             </form>
             <br>
