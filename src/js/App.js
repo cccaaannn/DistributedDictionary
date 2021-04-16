@@ -96,7 +96,7 @@ async function searchWord(){
 
 	const isExists = await dictionaryContract.isWordExists(word);
 	if(!isExists){
-		ui.displayToastMessages("error", 2, true, "Word not found");
+		ui.displayToastMessages("error", 2, false, "Word not found");
 		return
 	}
 
