@@ -4,7 +4,7 @@ const supportedNetwork = "kovan";
 const contractAssetsPath = "src/assets/contractAssets.json";
 
 // instantiate ui and contract
-const ui = new UI(searchWord, addNewWord, addNewPost, returnToMainPage);
+const ui = new UI(searchWord, addNewWord, addNewPost, returnToMainPage, showAllWords);
 const dictionaryContract = new DictionaryContract(contractAssetsPath);
 
 document.addEventListener("DOMContentLoaded", init);
@@ -24,11 +24,7 @@ async function init(){
 			window.web3 = new Web3(window.ethereum);
 			await dictionaryContract.buildContract();
 
-			// dictionaryContract.buildContract().then(async () => {
-			// 	const wordsArray = await dictionaryContract.getLastNWords(mainPageWordCount);
-			// 	ui.renderMainPage(wordsArray);
-			// });
-			
+
 			// test if user on the supported network
 			const type = await web3.eth.net.getNetworkType();
 			if(type != supportedNetwork){
@@ -70,6 +66,23 @@ async function returnToMainPage(){
 	ui.renderMainPage(wordsArray);
 }
 
+async function showAllWords(){
+	// gets all words and displays them
+	let allWords = await dictionaryContract.getAllWords();
+
+	// sort words
+	allWords = allWords.slice().sort(); 
+
+	ui.renderAllWords(allWords);
+}
+
+async function goToWord(button){
+	// renders clicked word's page
+	const word = button.id;
+	const postsArray = await dictionaryContract.getPostsByWord(word);
+	ui.renderPosts(word, postsArray);
+}
+
 /* ---------- ---------- ---------- */
 
 
@@ -83,7 +96,7 @@ async function searchWord(){
 
 	const isExists = await dictionaryContract.isWordExists(word);
 	if(!isExists){
-		ui.displayToastMessages("error", 2, false, "Word not found");
+		ui.displayToastMessages("error", 2, true, "Word not found");
 		return
 	}
 
