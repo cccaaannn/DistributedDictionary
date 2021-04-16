@@ -180,7 +180,7 @@ contract DistributedDictionary {
         addPost("cake", "The cake is a lie!");
         addPost("muz", "A fruit");
 
-        addPost("Distributed Dictionary", "A user generated dictionary that runs completely on the blockchain without a need for a backend.");
+        addPost("Distributed Dictionary", "A user-created dictionary that runs entirely on the blockchain without the need for a centralized backend.");
         votePost("Distributed Dictionary", 0, true);
     }
     // ---------- ---------- ---------- ---------- ----------  

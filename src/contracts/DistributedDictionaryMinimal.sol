@@ -111,7 +111,7 @@ contract DistributedDictionaryMinimal {
     // ---------- ---------- other ---------- ----------
     function initWithWords() private {
         // for initialising contract with words
-        addPost("Distributed Dictionary", "A user generated dictionary that runs completely on the blockchain without a need for a backend.");
+        addPost("Distributed Dictionary", "A user-created dictionary that runs entirely on the blockchain without the need for a centralized backend.");
     }
     // ---------- ---------- ---------- ---------- ----------  
 
