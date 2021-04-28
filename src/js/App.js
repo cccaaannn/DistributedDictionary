@@ -29,7 +29,7 @@ async function init(){
 			const type = await web3.eth.net.getNetworkType();
 			if(type != supportedNetwork){
 				console.log(type);
-				ui.displayToastMessages("error", 0, true, `Please switch to ${supportedNetwork} network`);
+				ui.displayToastMessages("error", 0, true, `Please switch to ${supportedNetwork} network and reload`);
 				return;
 			}
 
@@ -37,7 +37,9 @@ async function init(){
 			const wordsArray = await dictionaryContract.getLastNWords(mainPageWordCount);
 			ui.renderMainPage(wordsArray);
 
-		} 
+			// register service worker for pwa
+			registerServiceWorker();
+		}
 		catch (error) {
 			if (error.code === 4001) {
 				ui.displayToastMessages("error", 0, true, "This site requires permission form metamask.");
@@ -201,3 +203,18 @@ async function vote(button){
 
 /* ---------- ---------- ---------- */
 
+
+/* ---------- SW for pwa ---------- */
+
+function registerServiceWorker(){
+    if("serviceWorker" in navigator){
+        navigator.serviceWorker.register("sw.js", {scope: './'}).then(registration => {
+
+        }).catch(error => {
+            console.log("service worker can not registered");
+            console.log(error);
+        })
+    }
+}
+
+/* ---------- ---------- ---------- */

@@ -1,43 +1,5 @@
 /* ---------- navbar ---------- */
 
-/* .navbar{
-    top: 0px;
-    margin-top: -0.4%;
-    margin-left: -0.4%;
-    margin-right: -0.4%;
-    
-    margin-bottom: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-
-    display: block;
-    background-color: #1f1f1f;
-}
-
-.innerNav{
-    font-size: 2em;
-    margin-top: 0.2em;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-
-.navButton{
-    background-color: #1f1f1f;
-    color: white;
-    border: 1px solid white;
-
-    padding: 0.7em;
-    float: right;
-    margin-left: 1%;
-}
-
-.navButton:hover{
-    color: #568bff;
-    border: 1px solid #568bff;
-} */
-
-
 .navbarBackground{
     top: 0px;
     margin-top: -0.4%;
