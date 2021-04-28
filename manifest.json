@@ -1,0 +1,27 @@
+{
+    "name" : "Distributed Dictionary",
+    "short_name" : "Distributed Dictionary",
+    "description" : "A user-created dictionary that runs entirely on the blockchain without the need for a centralized backend.",
+    "start_url" : ".",
+    "background_color" : "#3c3c3c",
+    "theme_color" : "#568bff",
+    "display" : "standalone",
+    "icons" : [
+        {
+            "src" : "src/icons/icon-100x100.png",
+            "sizes" : "100x100",
+            "type" : "image/png"
+        },
+        {
+            "src" : "src/icons/icon-192x192.png",
+            "sizes" : "192x192",
+            "type" : "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src" : "src/icons/icon-512x512.png",
+            "sizes" : "512x512",
+            "type" : "image/png"
+        }
+    ]
+}
