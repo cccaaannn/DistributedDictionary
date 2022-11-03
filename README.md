@@ -8,16 +8,16 @@ A user-created dictionary that runs entirely on the blockchain without the need 
 ## Visit the example site on github or ipfs
 ##  [github.io/DistributedDictionary](https://cccaaannn.github.io/DistributedDictionary/)
 
-##  [ipfs/QmUh9AbafHZqjqR3y7k3pUmsdGJUKYLU7yRX5BJPF6J581](https://ipfs.io/ipfs/QmUh9AbafHZqjqR3y7k3pUmsdGJUKYLU7yRX5BJPF6J581/)
+##  [ipfs/QmP5RR32tS5rZfTpwpasnbpXTSdekTZKdzZeY1JzHonXaY](https://ipfs.io/ipfs/QmP5RR32tS5rZfTpwpasnbpXTSdekTZKdzZeY1JzHonXaY/)
 
 ```
-ipfs://QmUh9AbafHZqjqR3y7k3pUmsdGJUKYLU7yRX5BJPF6J581
+ipfs://QmP5RR32tS5rZfTpwpasnbpXTSdekTZKdzZeY1JzHonXaY
 ```
 
 <br>
 
-## Check the contract on [Etherscan](https://kovan.etherscan.io/address/0xeb1e6c13197071B018935070d3031d45fDa771A3#code)
+## Check the contract on [Etherscan](https://sepolia.etherscan.io/address/0xbe9bA5534e4Df2F83E6BB29564d29446740D307c#code)
 
 ```
-0xeb1e6c13197071B018935070d3031d45fDa771A3
+0xbe9bA5534e4Df2F83E6BB29564d29446740D307c
 ```
