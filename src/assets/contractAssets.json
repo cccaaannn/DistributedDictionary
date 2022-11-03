@@ -1,7 +1,12 @@
 {
-	"contractAssets" :{
-		"address" : "0xeb1e6c13197071B018935070d3031d45fDa771A3",
-		"abi" : [
+	"contractAssets": {
+		"network": {
+			"id": "11155111",
+			"name": "sepolia",
+			"etherscanBaseUrl": "https://sepolia.etherscan.io"
+		},
+		"address": "0xbe9bA5534e4Df2F83E6BB29564d29446740D307c",
+		"abi": [
 			{
 				"inputs": [],
 				"stateMutability": "nonpayable",
@@ -387,9 +392,3 @@
 		]
 	}
 }
-
-
-
-
-
-

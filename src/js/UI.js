@@ -1,6 +1,6 @@
-class UI{
+class UI {
 
-    constructor(searchWordFunction, addNewWordFunction, addNewPostFunction, returnToMainPageFunction, showAllWordsFunction){
+    constructor(searchWordFunction, addNewWordFunction, addNewPostFunction, returnToMainPageFunction, showAllWordsFunction) {
 
         this.searchWordFunction = searchWordFunction;
         this.addNewWordFunction = addNewWordFunction;
@@ -25,7 +25,7 @@ class UI{
 
 
     /* ---------- page render functions ---------- */
-    renderMainPage(wordsArray){
+    renderMainPage(wordsArray) {
         // renders main page
 
         // <h2 class="wordHeader">All words</h2>
@@ -35,7 +35,7 @@ class UI{
         // <br>
         // <hr class="blue">
 
-    
+
         this.contentDiv.innerHTML = ``;
         const wordHeader = document.createElement("h2");
         wordHeader.classList.add("wordHeader");
@@ -61,12 +61,12 @@ class UI{
         const Bluehr = document.createElement("hr");
         Bluehr.classList.add("blue");
         this.contentDiv.appendChild(Bluehr);
-        
+
         // addNewWordForm
         this.renderAddWordForm();
     }
 
-    renderAllWords(allWords){
+    renderAllWords(allWords) {
         // renders all words page
 
         // <h2 class="wordHeader">All words</h2>
@@ -91,7 +91,7 @@ class UI{
             lastAddedWordsButton.classList.add("lastAddedWordsButton");
             lastAddedWordsButton.id = allWords[i];
             lastAddedWordsButton.setAttribute("onclick", "goToWord(this);");
-            lastAddedWordsButton.appendChild(document.createTextNode(i+1 + "-" + allWords[i]));
+            lastAddedWordsButton.appendChild(document.createTextNode(i + 1 + "-" + allWords[i]));
 
             const br = document.createElement("br");
 
@@ -109,7 +109,7 @@ class UI{
         this.renderAddWordForm();
     }
 
-    renderPosts(word, postsArray){
+    renderPosts(word, postsArray) {
         // renders a post page
         // post id: postsArray[i][0]
         // post body: postsArray[i][1]
@@ -197,7 +197,7 @@ class UI{
         this.renderAddPostForm();
     }
 
-    renderAbout(){
+    renderAbout() {
         const contentDiv = document.getElementById("contentDiv");
 
         contentDiv.innerHTML = `
@@ -214,7 +214,7 @@ class UI{
 
 
     /* ---------- form functions ---------- */
-    renderAddWordForm(){
+    renderAddWordForm() {
         // renders add word form
 
         this.contentDiv.innerHTML += `
@@ -241,11 +241,11 @@ class UI{
             </form>
         </div>
         `;
-        
+
         document.getElementById("addNewWordForm").addEventListener("submit", this.addNewWordFunction);
     }
 
-    renderAddPostForm(){
+    renderAddPostForm() {
         // renders add post form
 
         this.contentDiv.innerHTML += `
@@ -270,12 +270,12 @@ class UI{
         document.getElementById("addNewPostForm").addEventListener("submit", this.addNewPostFunction);
     }
 
-    
-    clearSearchWordForm(){
+
+    clearSearchWordForm() {
         // clear search form
         this.searchWordField.value = "";
     }
-    clearConsentCheckBox(){
+    clearConsentCheckBox() {
         // clear Consent CheckBox
         const consentCheckBox = document.getElementById("consentCheckBox");
         consentCheckBox.checked = false;
@@ -285,9 +285,9 @@ class UI{
 
 
     /* ---------- toast message functions ---------- */
-    displayToastMessages(type, delay, isPermanent, message){
+    displayToastMessages(type, delay, isPermanent, message) {
         // displays toast message   
-        
+
         const alert = document.createElement("div");
 
         alert.className = `toastMessage toastMessage-${type}`;
@@ -296,7 +296,7 @@ class UI{
         this.messageDiv.appendChild(alert);
 
         // if isPermanent is true add a close button instead of delay
-        if(isPermanent){
+        if (isPermanent) {
             // button div
             const closeButtonDiv = document.createElement("div");
             closeButtonDiv.classList.add("toastMessageButton");
@@ -312,10 +312,10 @@ class UI{
 
         }
         // delete massage after delay
-        else{
+        else {
             window.setTimeout(() => {
                 alert.remove();
-            },delay*1000);
+            }, delay * 1000);
         }
 
     }
